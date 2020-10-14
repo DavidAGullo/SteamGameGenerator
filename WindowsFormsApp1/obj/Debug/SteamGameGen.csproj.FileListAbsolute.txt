@@ -1,0 +1,10 @@
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\SteamGameGen.csprojAssemblyReference.cache
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\SteamGameGen.csproj.GenerateResource.cache
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\SteamGameGen.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\david\OneDrive\Documents\GitHub\SteamGameGenerator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
