@@ -15,6 +15,12 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         string[] gameArray = new string[999];
+        HoldingList obj = new HoldingList();
+        
+
+        //Sets Numbers to Main
+        public int Numbers { get; set; }
+
 
         public Form1()
         {
@@ -31,24 +37,55 @@ namespace WindowsFormsApp1
             int count = 0;
             string line;
 
-            //Reads Files Line by Line
-            StreamReader file = new StreamReader("GamesOnSteam.txt");
-            while((line = file.ReadLine()) != null)
+            //Opens File Dialog to Select a txt File
+            try
             {
-                Console.WriteLine(line);
-                lBoxGames.Items.Add(line);
-                for(int x = 0; x < gameArray.Length; x++)
+                opnFile.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                opnFile.ShowDialog();
+                //Reads Files Line by Line
+                StreamReader file = new StreamReader(opnFile.FileName);
+                while ((line = file.ReadLine()) != null)
                 {
-                    gameArray[x] = line;
+                    Console.WriteLine(line);
+                    lBoxGames.Items.Add(line);
+                    gameArray[count] = line;
+
+                    count++;
                 }
-                count++;
+                file.Close();
+                obj.numMax = count;
+                Console.WriteLine(count);
             }
-            file.Close();
-            //Test
-            Console.WriteLine("There was {0} lines.", count);
-            Console.WriteLine(gameArray[5]);
+            catch(Exception NoFileSelected)
+            {
+                Debug.WriteLine("No File was Selected");
+            }            
+        }
+        //Randomifies a Number
+        private int RandomNum()
+        {
+            int num = 0;
+            Random rand = new Random();
+            num = rand.Next(0, obj.numMax);
+            return num;
+        }
+        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int random = RandomNum();
+            try
+            {
+                lBoxGames.SelectedIndex = (random);
+                tBoxGameTitle.Text = lBoxGames.Items[random].ToString();
+            }
+            catch(Exception GameListNotFound)
+            {
+                Debug.WriteLine(GameListNotFound.Message);
+            }
             
-            
+            //tBoxGameTitle.Text = (random +1).ToString();
+
         }
     }
 }
